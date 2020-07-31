@@ -1,0 +1,160 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #faf8ef;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    border-radius: .5rem;
+    width: 50rem;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #776e65;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.score {
+    display: flex;
+    align-self: flex-start;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.current-score, .best-score {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #bbada0;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.current-score {
+    margin-right: 1rem;
+}
+
+.score-text {
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.score-number {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.new-game {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #776e65;
+    font-size: 2rem;
+}
+
+.new-game button {
+    padding: 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    background-color: #8f7a66;
+    border-radius: .4rem;
+}
+
+.game-board {
+    display: grid;
+    background-color: #bbada0;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1rem;
+    height: 50rem;
+    padding: 1rem;
+    border-radius: .4rem;
+}
+
+.num {
+    background-color: #cdc1b4;
+    width: 11.25rem;
+    height: 11.25rem;
+    border-radius: .4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #776e65;
+}
+
+.num-3, .num-9 {
+    background-color: #eee4da;
+}
+
+.num-10 {
+    background-color: #ede0c8;
+}
+
+.num-12 {
+    background-color: #eee4da;
+}
+
+.num-13 {
+    color: #fff;
+    background-color: #f59563;
+}
+
+.num-12 {
+    color: #fff;
+    background-color: #f2b179;
+}
+
+.num-15 {
+    color: #fff;
+    background-color: #f65e3b;
+}
+
+.num-14 {
+    color: #fff;
+    background-color: #edcf72;
+}
+
+.num-16 {
+    color: #fff;
+    background-color: #edc53f;
+    font-size: 4rem;
+    border: 1px solid rgb(206, 203, 203);
+}
+

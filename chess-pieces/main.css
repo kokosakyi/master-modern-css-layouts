@@ -1,0 +1,80 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+    background-color: #fff;  
+    font-family: 'PT Sans', sans-serif;
+    font-size: 3rem;
+    color: rgb(44, 44, 44);
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(172, 225, 246);
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+}
+
+
+.card {
+    background-color: #fff;
+    width: calc(50% - 4rem);
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    float: left;
+}
+
+.clearfix::after {
+    display: block;
+    content: '';
+    clear: both;
+} 
+
+.card:nth-child(odd) {
+    clear: both;
+}
+
+.card img {
+    width: 15rem;
+    float: left;
+}
+
+.card {
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 3rem;
+    padding: 2rem;
+}
+
+.card .description {
+}
+
+.card .title {
+    font-size: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
