@@ -1,0 +1,478 @@
+:root {
+    box-sizing: border-box;
+}
+
+*, ::before, ::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body { 
+    background-color: #fff;
+}
+
+.wrapper {
+    background-color: rgb(240, 251, 250);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Amita', cursive;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.container {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+
+
+
+
+.periodic-table {
+    display: grid;
+    grid-template-areas: 
+                        "H	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	.	He"
+                        "Li	Be	.	.	.	.	.	.	.	.	.	.	B	C	N	O	F	Ne"
+                        "Na	Mg	.	.	.	.	.	.	.	.	.	.	Al	Si	P	S	Cl	Ar"
+                        "K	Ca	Sc	Ti	V 	Cr	Mn	Fe	Co	Ni	Cu	Zn	Ga	Ge	As	Se	Br	Kr"
+                        "Rb	Sr	Y	Zr	Nb	Mo	Tc	Ru	Rh	Pd	Ag	Cd	In	Sn	Sb	Te	I	Xe"
+                        "Cs	Ba	La	Hf	Ta	W	Re	Os	Ir	Pt	Au	Hg	Tl	Pb	Bi	Po	At	Rn"
+                        "Fr	Ra	Ac	Rf	Db	Sg	Bh	Hs	Mt	Ds	Rg	Cn	Nh	Fl	Mc	Lv	Ts	Og"
+                        ".  .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   .   ."
+                        ".	.	.	Ce	Pr	Nd	Pm	Sm	Eu	Gd	Tb	Dy	Ho	Er	Tm	Yb	Lu	."
+                        ".	.	.	Th	Pa	U	Np	Pu	Am	Cm	Bu	Cf	Es	Fm	Md	No	Lr	."
+}
+
+.element {
+    border: 1px solid rgb(122, 219, 248);
+    width: 7rem;
+    height: 7rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: rgb(47, 47, 47);
+    margin: 1rem;
+    font-family: 'Amita', cursive;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.H {
+    grid-area: H;
+}
+
+.He {
+    grid-area: He;
+}
+
+.Li {
+    grid-area: Li;
+}
+
+.Be {
+    grid-area: Be;
+}
+
+.B {
+    grid-area: B;
+}
+
+.C {
+    grid-area: C;
+}
+
+.N {
+    grid-area: N;
+}
+
+.O {
+    grid-area: O;
+}
+
+.F {
+    grid-area: F;
+}
+
+.Ne {
+    grid-area: Ne;
+}
+
+.Na {
+    grid-area: Na;
+}
+
+.Mg {
+    grid-area: Mg;
+}
+
+.Al {
+    grid-area: Al;
+}
+
+.Si {
+    grid-area: Si;
+}
+
+.P {
+    grid-area: P;
+}
+
+.S {
+    grid-area: S;
+}
+
+.Cl {
+    grid-area: Cl;
+}
+
+.Ar {
+    grid-area: Ar;
+}
+
+.K {
+    grid-area: K;
+}
+
+.Ca {
+    grid-area: Ca;
+}
+
+.Sc {
+    grid-area: Sc;
+}
+
+.Ti {
+    grid-area: Ti;
+}
+
+.V {
+    grid-area: V;
+}
+
+.Cr {
+    grid-area: Cr;
+}
+
+.Mn {
+    grid-area: Mn;
+}
+
+.Fe {
+    grid-area: Fe;
+}
+
+.Co {
+    grid-area: Co;
+}
+
+.Ni {
+    grid-area: Ni;
+}
+
+.Cu {
+    grid-area: Cu;
+}
+
+.Zn {
+    grid-area: Zn;
+}
+
+.Ga {
+    grid-area: Ga;
+}
+
+.Ge {
+    grid-area: Ge;
+}
+
+.As {
+    grid-area: As;
+}
+
+.Se {
+    grid-area: Se;
+}
+
+.Br {
+    grid-area: Br;
+}
+
+.Kr {
+    grid-area: Kr;
+}
+
+.Rb {
+    grid-area: Rb;
+}
+
+.Sr {
+    grid-area: Sr;
+}
+
+.Y {
+    grid-area: Y;
+}
+
+.Zr {
+    grid-area: Zr;
+}
+
+.Nb {
+    grid-area: Nb;
+}
+
+.Mo {
+    grid-area: Mo;
+}
+
+.Tc {
+    grid-area: Tc;
+}
+
+.Ru {
+    grid-area: Ru;
+}
+
+.Rh {
+    grid-area: Rh;
+}
+
+.Pd {
+    grid-area: Pd;
+}
+
+.Ag {
+    grid-area: Ag;
+}
+
+.Cd {
+    grid-area: Cd;
+}
+
+.In {
+    grid-area: In;
+}
+
+.Sn {
+    grid-area: Sn;
+}
+
+.Sb {
+    grid-area: Sb;
+}
+
+.Te {
+    grid-area: Te;
+}
+
+.I {
+    grid-area: I;
+}
+
+.Xe {
+    grid-area: Xe;
+}
+
+.Cs {
+    grid-area: Cs;
+}
+
+.Ba {
+    grid-area: Ba;
+}
+
+.La {
+    grid-area: La;
+}
+
+.Hf {
+    grid-area: Hf;
+}
+
+.Ta {
+    grid-area: Ta;
+}
+
+.W {
+    grid-area: W;
+}
+
+.Re {
+    grid-area: Re;
+}
+
+.Os {
+    grid-area: Os;
+}
+
+.Ir {
+    grid-area: Ir;
+}
+
+.Pt {
+    grid-area: Pt;
+}
+
+.Au {
+    grid-area: Au;
+}
+
+.Hg {
+    grid-area: Hg;
+}
+
+.Tl {
+    grid-area: Tl;
+}
+
+.Pb {
+    grid-area: Pb;
+}
+
+.Bi {
+    grid-area: Bi;
+}
+
+.Po {
+    grid-area: Po;
+}
+
+.At {
+    grid-area: At;
+}
+
+.Rn {
+    grid-area: Rn;
+}
+
+.Fr {
+    grid-area: Fr;
+}
+
+.Ra {
+    grid-area: Ra;
+}
+
+.Ac {
+    grid-area: Ac;
+}
+
+.Rf {
+    grid-area: Rf;
+}
+
+.Db {
+    grid-area: Db;
+}
+
+.Sg {
+    grid-area: Sg;
+}
+
+.Bh {
+    grid-area: Bh;
+}
+
+.Hs {
+    grid-area: Hs;
+}
+
+.Mt {
+    grid-area: Mt;
+}
+
+.Ds {
+    grid-area: Ds;
+}
+
+.Rg {
+    grid-area: Rg;
+}
+
+.Cn {
+    grid-area: Cn;
+}
+
+.Nh {
+    grid-area: Nh;
+}
+
+.Fl {
+    grid-area: Fl;
+}
+
+.Mc {
+    grid-area: Mc;
+}
+
+.Lv {
+    grid-area: Lv;
+}
+
+.Ts {
+    grid-area: Ts;
+}
+
+.Og {
+    grid-area: Og;
+}
+
+.alkali-metals {
+    background-color: #f3baa9;
+}
+
+.alkaline-earth-metals {
+    background-color: #fed7b0;
+}
+
+.halogens {
+    background-color: #ffeabb;
+}
+
+.noble-gases {
+    background-color: #cfd4f2;
+}
+
+.transition-metals {
+    background-color: #a5e1ec;
+}
+
+.unknown-properties {
+    background-color: #aec1df;
+}
+
+.metalloids {
+    background-color: #d4eabc;
+}
+
+.post-transition-metals {
+    background-color: #e4cfe2;
+}
+
+.non-metals {
+    background-color: #c8e4be;
+}
+
+.lanthanides {
+    background-color: #d5c0e1;
+}
+
+.actinides {
+    background-color: #f5c4da;
+}
